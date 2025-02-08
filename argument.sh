@@ -44,6 +44,8 @@ echo -n "CASE7 OVERFLOW:    "; run_test "111111111111111111111111111111111111111
 
 # echo -n "CASE4 INTMIN:      "; ../push_swap "-2147483649"  >/dev/null 2>&1 && pok || png
 
-echo -n "CASE4 INTMIN:      "; ../push_swap "-2147483648"  >/dev/null 2>&1 && pok || png
+echo -n "CASE8 INTMIN:      "; ../push_swap "-2147483648"  >/dev/null 2>&1 && pok || png
 
-echo -n "CASE5 INTMAX:      "; run_test "2147483647"  >/dev/null 2>&1 && pok || png
+echo -n "CASE9 INTMAX:      "; run_test "2147483647"  >/dev/null 2>&1 && pok || png
+
+echo -n "CASE10:             "; run_test "1 1 2"
